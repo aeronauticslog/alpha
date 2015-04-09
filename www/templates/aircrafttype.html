@@ -1,0 +1,36 @@
+<ion-view title="{{aircrafttype.model}}">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+  <h2>{{aircrafttype.model}}</h2>
+          <form>
+            <label class="item item-input" name="type">
+                <span class="input-label">Type</span>
+                <input type="text" placeholder="Type">
+            </label>
+            <label class="item item-input" name="make">
+                <span class="input-label">Make</span>
+                <input type="text" placeholder="Make">
+            </label>
+            <label class="item item-input" name="model">
+                <span class="input-label">Model</span>
+                <input type="text" placeholder="Model">
+            </label>
+            <label class="item item-input" name="category">
+                <span class="input-label">Category</span>
+                <input type="text" placeholder="Category">
+            </label>
+            <label class="item item-input" name="type">
+                <span class="input-label">Engine Type</span>
+                <input type="text" placeholder="Type">
+            </label>
+            <label class="item item-input" name="atclass">
+                <span class="input-label">Class</span>
+                <input type="text" placeholder="Class">
+            </label>
+            <ion-toggle toggle-class="toggle-positive" name="def-sic">Multi-Pilot</ion-toggle>
+        </form>
+  </ion-content>
+</ion-view>
+

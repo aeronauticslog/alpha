@@ -1,0 +1,50 @@
+ <div class="modal">
+    <ion-header-bar>
+      <h1 class="title">New Contact</h1>
+    </ion-header-bar>
+    <ion-content>
+      <div class="list">
+        <form>
+            <label class="item item-input" name="image">
+                <span class="input-label">Add picture</span>
+                <button ng-click="addPicture()" class="button button-icon icon ion-camera"></button>
+                <img ng-show="newcontact.image !== undefined" ng-src="{{newcontact.image}}">
+            </label>
+            <label class="item item-input" name="id">
+                <span class="input-label">ID</span>
+                <input type="text" placeholder="ID" ng-model="newcontact.id">
+            </label>
+            <label class="item item-input" name="first-name">
+                <span class="input-label">First Name</span>
+                <input type="text" placeholder="First Name" ng-model="newcontact.name">
+            </label>
+            <label class="item item-input" name="last-name">
+                <span class="input-label">Last Name</span>
+                <input type="text" placeholder="Last Name" ng-model="newcontact.surname">
+            </label>
+            <label class="item item-input" name="organization">
+                <span class="input-label">Organization</span>
+                <input type="text" placeholder="Organization" ng-model="newcontact.organization">
+            </label>
+            <label class="item item-input" name="type">
+                <span class="input-label">Type</span>
+                <input type="text" placeholder="Type" ng-model="newcontact.type">
+            </label>
+            <label class="item item-input" name="email">
+                <span class="input-label">E-Mail</span>
+                <input type="email" placeholder="E-mail" ng-model="newcontact.email">
+            </label>
+            <label class="item item-input" name="phone">
+                <span class="input-label">Phone</span>
+                <input type="tel" placeholder="Phone" ng-model="newcontact.phone">
+            </label>
+            <ion-toggle toggle-class="toggle-positive" name="def-pic" ng-model="newcontact.is_default_pic">Default PIC</ion-toggle>
+            <ion-toggle toggle-class="toggle-positive" name="def-sic" ng-model="newcontact.is_default_sic">Default SIC</ion-toggle>
+            <ion-toggle toggle-class="toggle-positive" name="favorite" ng-model="newcontact.is_favorite">Is favorite</ion-toggle>
+            <ion-toggle toggle-class="toggle-positive" name="me" ng-model="newcontact.is_me">Is me</ion-toggle>
+        </form>
+      </div>
+
+      <button class="button button-full button-light" ng-click="close()">Done</button>
+    </ion-content>
+</div>

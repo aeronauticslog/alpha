@@ -1,0 +1,55 @@
+<ion-side-menus>
+
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-dark">
+    <img src="img/design/logo.png" style="padding:5;max-width:1.8em"></img>  
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item nav-clear menu-close href="#/app/logentry">
+        <i class="icon ion-plus-circled"></i> New Log Entry
+        </ion-item>
+		  <ion-item nav-clear menu-close href="#/app/log">
+        <i class="icon ion-ios7-stopwatch"></i> Log
+        </ion-item>
+
+        <ion-item class="nav-clear menu-close" href="#/app/places">
+         <i class="icon ion-location"></i> Places
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/contacts">
+         <i class="icon ion-android-social"></i> Contacts
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/aircrafts">
+         <i class="icon ion-plane"></i> Aircraft
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/aircrafttypes">
+         <i class="icon ion-jet"></i> Aircraft Types
+        </ion-item>
+		<ion-item  nav-clear menu-close href="#/app/pilot">
+         <i class="icon ion-android-social-user"></i> Pilot
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/settings">
+         <i class="icon ion-android-settings"></i> Settings
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/start">
+          <i class="icon ion-power"></i> Log Out
+        </ion-item>
+          
+        <ion-item nav-clear menu-close href="#/app/tests">
+          <i class="icon ion-power"></i> Test
+        </ion-item>
+          
+        <ion-item nav-clear menu-close href="#/app/dbtest">
+          <i class="icon ion-power"></i> DB Tests
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

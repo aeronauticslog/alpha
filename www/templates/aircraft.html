@@ -1,0 +1,58 @@
+<ion-view title="Aircraft">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header" padding="false">
+      	<div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; background-color: rgb(255, 255, 255);">
+            <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+        </div>
+        <form>
+            <label class="item item-input" name="aircraftid">
+                <span class="input-label">Aircraft ID</span>
+                <input type="text" placeholder="Aircraft ID" ng-model="aircraft.id">
+            </label>
+            <label class="item item-input" name="aircraftid2">
+                <span class="input-label">Secondary ID</span>
+                <input type="text" placeholder="Secondary ID" ng-model="aircraft.ndid">
+            </label>
+            <label class="item item-input" name="type">
+                <span class="input-label">Type</span>
+                <input type="text" placeholder="Type" ng-model="aircraft.type">
+            </label>
+            <label class="item item-input" name="operator">
+                <span class="input-label">Operator</span>
+                <input type="text" placeholder="Operator" ng-model="aircraft.operator">
+            </label>
+            <label class="item item-input" name="owner">
+                <span class="input-label">Owner</span>
+                <input type="text" placeholder="Owner" ng-model="aircraft.owner">
+            </label>
+            <label class="item item-input" name="serial">
+                <span class="input-label">Serial Number</span>
+                <input type="text" placeholder="Serial Number" ng-model="aircraft.serialnumber">
+            </label>
+            <label class="item item-input" name="instrumenttype">
+                <span class="input-label">Instrument Type</span>
+                <input type="text" placeholder="Instrument Type" ng-model="arcraft.instrumenttype">
+            </label>
+            <label class="item item-input" name="enginepoweer">
+                <span class="input-label">Engine Power</span>
+                <input type="number" placeholder="Engine Power" ng-model="aircraft.enginepower">
+            </label>
+            <label class="item item-input" name="weight">
+                <span class="input-label">Weight</span>
+                <input type="number" placeholder="Weight" ng-model="aircraft.weight">
+            </label>
+            <label class="item item-input" name="paxcapacity">
+                <span class="input-label">Pax Capacity</span>
+                <input type="number" placeholder="Pax Capacity" ng-model="aircraft.paxcapacity">
+            </label>
+            <label class="item item-input" name="year">
+                <span class="input-label">Year</span>
+                <input type="number" placeholder="1988" ng-model="aircraft.year">
+            </label>
+            <ion-toggle toggle-class="toggle-positive" name="default" ng-model="aircraft.default">Default</ion-toggle>
+            <ion-toggle toggle-class="toggle-positive" name="favourite" ng-model="aircraft.favourite">Favourite</ion-toggle>
+        </form>
+  </ion-content>
+</ion-view>

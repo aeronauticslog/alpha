@@ -1,0 +1,77 @@
+ <div class="modal-newplace">
+    <ion-content padding="true">
+        <form>
+            <label class="item item-input" name="Timezone">
+                <span class="input-label">Timezone</span>
+                <input type="text" placeholder="Timezone" ng-model="place.timezone">
+            </label>
+            <label class="item item-input" name="Type">
+                <span class="input-label">Type</span>
+                <input type="text" placeholder="Type" ng-model="place.type">
+            </label>
+            <label class="item item-input" name="Indentifier">
+                <span class="input-label">Indentifier</span>
+                <input type="text" placeholder="Indentifier" ng-model="place.indentifier">
+            </label>
+            <label class="item item-input" name="ICAO">
+                <span class="input-label">ICAO</span>
+                <input type="text" placeholder="ICAO" ng-model="place.icao">
+            </label>
+            <label class="item item-input" name="IATA">
+                <span class="input-label">IATA</span>
+                <input type="text" placeholder="IATA" ng-model="place.iata">
+            </label>
+            <label class="item item-input" name="Name">
+                <span class="input-label">Name</span>
+                <input type="text" placeholder="Name" ng-model="place.name">
+            </label>
+            <label class="item item-input" name="Beacon">
+                <span class="input-label">Beacon</span>
+                <input type="text" placeholder="Beacon" ng-model="place.beacon">
+            </label> 
+            <label class="item item-input" name="City">
+                <span class="input-label">City</span>
+                <input type="text" placeholder="City" ng-model="place.city">
+            </label>
+            <label class="item item-input" name="State">
+                <span class="input-label">State</span>
+                <input type="text" placeholder="State" ng-model="place.state">
+            </label>
+            <label class="item item-input" name="Country">
+                <span class="input-label">Country</span>
+                <input type="text" placeholder="Country" ng-model="place.country">
+            </label>
+            <label class="item item-input" name="Latitude">
+                <span class="input-label">Latitude</span>
+                <input type="text" placeholder="Latitude" ng-model="place.latitude">
+            </label>
+            <label class="item item-input" name="Longitude">
+                <span class="input-label">Longitude</span>
+                <input type="text" placeholder="Longitude" ng-model="place.longitude">
+            </label>
+            <label class="item item-input" name="Elevation">
+                <span class="input-label">Elevation</span>
+                <input type="text" placeholder="Elevation" ng-model="place.elevation">
+            </label>
+            <label class="item item-input" name="Magnetic Variation">
+                <span class="input-label">Magnetic Variation</span>
+                <input type="text" placeholder="Magnetic Variation" ng-model="place.mvar">
+            </label>
+            <label class="item item-input" name="Home Base">
+                <span class="input-label">Home Base</span>
+                <input type="text" placeholder="Home Base" ng-model="place.homebase">
+            </label>
+            <label class="item item-input" name="CONUS Rate">
+                <span class="input-label">CONUS Rate</span>
+                <input type="text" placeholder="CONUS Rate" ng-model="place.conus">
+            </label>
+            <label class="item item-input" name="OCONUS Rate">
+                <span class="input-label">OCONUS Rate</span>
+                <input type="text" placeholder="OCONUS Rate" ng-model="place.oconus">
+            </label>
+            <ion-toggle toggle-class="toggle-positive" name="favourite" ng-model="place.default">Default</ion-toggle>
+            <ion-toggle toggle-class="toggle-positive" name="favourite" ng-model="place.favourite">Favourite</ion-toggle>
+            <button class="button button-full button-light" ng-click="close()">Done</button>
+        </form>
+    </ion-content>
+</div>

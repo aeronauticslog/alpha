@@ -1,0 +1,2 @@
+angular.module('logbook.services', [])
+

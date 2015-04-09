@@ -1,0 +1,42 @@
+<ion-view title="Pilot">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+	<div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; background-color: rgb(255, 255, 255);">
+        <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+    </div>
+	<form>
+            <label class="item item-input" name="id">
+                <span class="input-label">ID</span>
+                <input type="text" placeholder="ID">
+            </label>
+            <label class="item item-input" name="first-name">
+                <span class="input-label">First Name</span>
+                <input type="text" placeholder="First Name">
+            </label>
+            <label class="item item-input" name="last-name">
+                <span class="input-label">Last Name</span>
+                <input type="text" placeholder="Last Name">
+            </label>
+            <label class="item item-input" name="organization">
+                <span class="input-label">Organization</span>
+                <input type="text" placeholder="Organization">
+            </label>
+            <label class="item item-input" name="type">
+                <span class="input-label">Type</span>
+                <input type="text" placeholder="Type">
+            </label>
+            <label class="item item-input" name="email">
+                <span class="input-label">E-Mail</span>
+                <input type="email" placeholder="E-mail">
+            </label>
+            <label class="item item-input" name="phone">
+                <span class="input-label">Phone</span>
+                <input type="tel" placeholder="Phone">
+            </label>
+            <ion-toggle toggle-class="toggle-positive" name="def-pic">Default PIC</ion-toggle>
+            <ion-toggle toggle-class="toggle-positive" name="def-sic">Default SIC</ion-toggle>
+        </form>
+  </ion-content>
+</ion-view>
